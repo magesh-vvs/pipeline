@@ -1,11 +1,3 @@
-pipeline {
-    agent any
+#!/bin/bash
 
-    stages {
-        stage('Hello World Stage') {
-            steps {
-                echo 'Hello, World!'
-            }
-        }
-    }
-}
+echo "Hello, World!"
