@@ -1,1 +1,5 @@
-echo " this is the code to trial pipe line integration with github "
+node {
+    stage('Hello World Stage') {
+        echo 'Hello, World!'
+    }
+}
