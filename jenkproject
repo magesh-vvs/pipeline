@@ -1,5 +1,11 @@
-node {
-    stage('Hello World Stage') {
-        echo 'Hello, World!'
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello World Stage') {
+            steps {
+                echo 'Hello, World!'
+            }
+        }
     }
 }
