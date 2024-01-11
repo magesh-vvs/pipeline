@@ -1,14 +1,10 @@
 pipeline {
-    agent any
-
+    agent { label 'master' }
     stages {
-        stage('Build') {
+        stage('build') {
             steps {
-                script {
-                    echo "Building Hello World"
-                    // You can add build commands or scripts here if needed
-                }
+                echo "Hello World!"
             }
         }
-    } 
-  }  
+    }
+}
